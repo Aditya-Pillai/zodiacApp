@@ -21,20 +21,25 @@
 	<h1>Welcome to Zodiac App</h1>
 	<div class="row">
 		<div class="col-md-4">
-			<img src="/images/zodiac.jpg" alt="zodiac images" class="img-responsive" width="300px" height="300px">			
+			<img src="/images/zodiac.jpg" alt="zodiac images" class="img-responsive" width="300px" height="350px">			
 			<hr>
 			<form>
 				<div class="form-group">
-					<input type="text" id="userSearch" placeholder="Enter Zodiac Name">
+					<input type="text" id="user-search" placeholder="Enter Zodiac Name" class="form-control">
 				</div>
 				<div class="form-group">
-					<button class="btn btn-danger btn-lg" onClick="getTry()" type="button">FIND</button>
+					<button class="btn btn-danger btn-lg" onclick="getData()" type="button" >FIND</button>
 				</div>
 			</form>
 		</div>
 		<div class="col-md-4">
+			<h2 id ="name"></h2>
+			<h5 id = "date"></h5>
 			<img id="img">
-			<p id="text-result"></p>
+			 
+		</div>
+		<div class="col-md-4">
+			<p id="text-result" align="justify"></p>
 		</div>
 	</div>
 </div>
