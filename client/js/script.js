@@ -75,12 +75,19 @@ var zodiacs = [
 
 function getData(){
 	var userSearch = document.getElementById('user-search').value.toLowerCase();
+	var flag=true;
 	for(var i = 0; i < zodiacs.length; i++){
 		if(userSearch === zodiacs[i].name.toLowerCase()){
+			flag=false;
 			document.getElementById('name').innerHTML = zodiacs[i].name;
 			document.getElementById('date').innerHTML = zodiacs[i].month;
 			document.getElementById('img').src = zodiacs[i].image;
 			document.getElementById('text-result').innerHTML = zodiacs[i].description;
 		}
+	}
+	if(flag==true)
+	{
+			document.getElementById('name').innerHTML = "Enter a zodiac Sign";
+			document.getElementById('text-result').innerHTML="YOU ARE GONNA DIE SOON!"
 	}
 }
