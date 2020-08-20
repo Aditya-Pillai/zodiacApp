@@ -65,3 +65,19 @@ var zodiacs = [
 	description:"YOU WILL DIE SOON!!"
 }
 ]
+
+function getData() {
+	var userSearch = document.getElementById('userSearch').value;
+	for(var i=0 ; i<zodiacs.length;i++)
+	{
+		if(userSearch === zodiacs[i].name)
+		{
+			document.getElementById(text-result).innerHTML=zodiac[i].description;
+
+		}
+	}
+}
+
+function getTry(){
+	document.getElementById(text-result).innerHTML="Hello";
+}
